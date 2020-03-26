@@ -1,4 +1,4 @@
-# Go_Chase_It_1
+# Go_Chase_It_2
 To make a skid-steer drive robot to chase any coloured ball with the help of hough circle transformation
 
 Project Aim:
