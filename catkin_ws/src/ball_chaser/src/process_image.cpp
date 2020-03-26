@@ -58,7 +58,7 @@ void process_image_callback(const sensor_msgs::ImageConstPtr& msg)
     }
 
     cv::namedWindow("Detected balls", CV_WINDOW_AUTOSIZE);
-    cv::imshow("Hough Circle Transform Demo", cv_ptr->image);
+    cv::imshow("Detected balls", cv_ptr->image);
 
     cv::waitKey(10);
 
@@ -74,7 +74,7 @@ void process_image_callback(const sensor_msgs::ImageConstPtr& msg)
             ROS_INFO_STREAM("Moving left");
             lin_x = 0.5;
             ang_z = 1.5;
-        }  else if (circles[0][0] < cv_ptr->image.cols/3) {
+        }  else if (circles[0][0] < cv_ptr->image.cols/3 * 2) {
             ROS_INFO_STREAM("Moving straight");
             lin_x = 0.5;
             ang_z = 0;
