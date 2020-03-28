@@ -1,7 +1,7 @@
 # Go_Chase_It_2
 To make a skid-steer drive robot to chase any coloured ball with the help of hough circle transformation
 
-Project Aim:
+## Project Aim:
 
   1) To create two ROS packages inside ```/src```: the ```drive_bot``` and the ```ball_chaser```.
   
@@ -21,7 +21,7 @@ Project Aim:
     - The ```ball_chaser.launch``` should run both the drive_bot and the process_image nodes.
     
   
-  Instructions to download and run the project:
+##  Instructions to download and run the project:
   
   1) Create a new folder, say Go_Chase_It_2 and clone this repository with ```git clone https://github.com/sourabhmisal/Go_Chase_It_2.git``` 
   
@@ -46,3 +46,10 @@ Project Aim:
      ```$ roslaunch ball_chaser ball_chaser.launch```
      
         Move any ball in front of the robot and see the robot chasing it !
+        
+## Resources referred to during implementation:
+
+1) Hough Cirles : https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.html
+
+2) CV bridges : http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
+
